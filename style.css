@@ -1,0 +1,340 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+}
+ /*fontes*/
+ 
+@font-face{
+    font-family: 'hemi';
+    src: url('./fonte/hemi\ head\ bd\ it.otf') format('opentype');
+}
+@font-face {
+    font-family: 'abnes';
+    src: url('./fonte/abnes.otf') format('opentype'), 
+    url('./fonte/abnes.ttf') format('truetype')
+}
+
+/* cabeçalho */
+
+header {
+    width: 100vw;
+    height: 200px;
+    background-color: #fff;
+    box-shadow: #000 3px 3px 10px;
+}
+.logo {
+    background-color: #85008a;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    box-shadow: #000 2px 2px 2px;
+}
+.logo img {
+    width: 150px;
+    height: 150px;
+    margin-left: 80px;
+    margin-top: 25px;
+    border-radius: 75px;
+}
+.logo h1 {
+    margin-top: 50px;
+    margin-left: 80px;
+    color: #00f2ff;
+    font-family: 'abnes';
+    font-size: 50px;
+    text-shadow: #000 2px 2px 3px;
+}
+
+/*icones das redes sociais*/
+
+.social-links {
+    width: 700px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.social-link {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.social-link a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+.social-link img {
+    background-color: #fff;
+    width: 32px;
+    height: 32px;
+    margin: 0;
+    border: #000 solid 1px;
+}
+
+/*menu*/
+
+.menu {
+    display: flex;
+    justify-content: center;
+    margin: 40px;
+    align-items: center;
+}
+.menu a {
+    font-family: 'hemi';
+    margin-right: 80px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: #000 solid 3px;
+    color: #000;
+    text-shadow: #006674 1px 1px 1px;
+}
+.menu img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+.menu a:hover {
+    color: #00f2ff;
+    border-bottom: none;
+    text-shadow: #000 2px 2px 1px;
+}
+
+/*intro*/
+
+.first-fold {
+    width: 100%;
+    display: flex;
+    height: calc(100vh - 200px);
+}
+.nova-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 35px;
+    margin-top: 50px;
+    padding: 30px;
+}
+.first-fold .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+    width: 100%;
+}
+.first-fold .right {
+    background-image: url(./imagens/fundo/257488708010212.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.first-fold h2 {
+    font-size: 27px;
+    font-family: 'hemi';
+    width: 250px;
+    text-shadow: #000 5px 5px 45px;
+}
+.first-fold p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    width: 500px;
+    line-height: 27px;
+    font-weight: 500;
+}
+.first-fold span {
+    margin-left: 15px;
+}
+
+/*Sobremim*/
+
+.me {
+    background-image: url(./imagens/fundo/sala-roxa.jpg);
+    background-size: cover;
+    background-position: bottom;
+    width: 100vw;
+    height: 600px;
+    margin-top: 20px;
+}
+.me-area {
+    background-color: rgba(35, 0, 43, 0.85);
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sobre {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+}
+.sobre h1 {
+    margin-top: 20px;
+    font-family: 'hemi';
+    text-transform: uppercase;
+}
+.sobre img {
+    margin-top: 15px;
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+.me h2 {
+    margin-top: 30px;
+    font-family: 'hemi';
+    text-shadow: #00f2ff 1px 1px 2px;
+    background-color: #85008a;
+    width: 200px;
+    height: 35px;
+}
+.me p {
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-shadow: #005a66 1px 1px 1px;
+}
+.me-desc {
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.me-desc-area {
+    width: 70%;
+    height: 80%;
+    border-top: #000 solid 1px;
+    border-bottom: #000 solid 1px;
+    text-align: center;
+}
+.me-desc-area h1 {
+    margin-top: 50px;
+    text-transform: uppercase;
+    font-family: 'hemi';
+    text-shadow: #006674 1px 1px 2px;
+}
+.me-desc-area p {
+    font-size: 17px;
+    line-height: 1.5;
+    margin-top: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*portifólio*/
+
+.portfolio {
+    background-image: url(./imagens/fundo/city.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 600px;
+    color: #fff;
+}
+.port-area-bg {
+    background-color: rgb(0, 0, 0, 0.7);
+    width: 100vw;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.port-area-bg h1 {
+    font-family: 'hemi';
+    text-transform: uppercase;
+    text-shadow: #00f2ff 1px 1px 3px;
+    margin-top: 60px;
+}
+.port-demo {
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+.port-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-family: 'hemi';
+    text-shadow: #00f2ff 1px 1px 3px;
+}
+.port-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    font-family: 'hemi';
+    text-shadow: #00f2ff 1px 1px 3px;
+}
+.port-videos {
+    margin-top: 5px;
+    width: 450px;
+    height: 350px;
+    border-radius: 30px;
+    background-color: #fff;
+}
+.port-sites {
+    margin-top: 5px;
+    width: 450px;
+    height: 350px;
+    border-radius: 30px;
+    background-color: #ffffff;
+}   
+
+/*footer*/
+
+footer {
+    width: 100vw;
+    height: 250px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contato {
+    width: 70%;
+    height: 150px;
+    border-top: #797979 solid 1px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.contato .email {
+    display: flex;
+    align-items: center;
+}
+.email img {
+    width: 53px;
+    height: 50px;
+}
+.email P {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+}
+.contato .whats {
+    display: flex;
+    align-items: center;
+}
+.whats img {
+    width: 79px;
+    height: 50px;
+}
+
+
